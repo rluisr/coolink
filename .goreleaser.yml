@@ -1,4 +1,4 @@
-project_name: mfool
+project_name: coolink
 env:
   - GO111MODULE=on
 before:
@@ -6,7 +6,7 @@ before:
     - go mod tidy
 builds:
   - main: .
-    binary: mfool
+    binary: coolink
     ldflags:
       - -s -w
       - -X main.version={{.Version}}
