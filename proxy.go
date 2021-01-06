@@ -14,7 +14,15 @@ func getImage(c *gin.Context) {
 		return
 	}
 
-	resp, err := http.Get(targetURL)
+	client := &http.Client{}
+	req, err := http.NewRequest("GET", targetURL, nil)
+	if err != nil {
+		c.String(http.StatusInternalServerError, err.Error())
+		return
+	}
+	req.Header.Set("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 11_1_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36")
+
+	resp, err := client.Do(req)
 	if err != nil {
 		c.String(http.StatusInternalServerError, err.Error())
 		return
