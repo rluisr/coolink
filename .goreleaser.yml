@@ -41,4 +41,6 @@ archives:
       - goos: windows
         format: zip
 release:
-  prerelease: auto
+  github:
+    owner: rluisr
+    name: coolink
