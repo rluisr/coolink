@@ -1,4 +1,4 @@
-![golangci-lint](https://github.com/rluisr/coolink/workflows/golangci-lint/badge.svg?branch=master) | ![goreleaser](https://github.com/rluisr/coolink/workflows/goreleaser/badge.svg)
+![golangci-lint](https://github.com/rluisr/coolink/workflows/golangci-lint/badge.svg?branch=master) | ![lint](https://github.com/rluisr/coolink/workflows/lint/badge.svg)
 
 coolink
 =======
